@@ -6,10 +6,10 @@
   "homepage": "http://bugtype.github.io/css-storybook",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "predeploy": "npm run build-storybook",
-    "deploy-storybook": "gh-pages -d storybook-static",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "clean-public": "build-storybook -c",
+    "build-storybook": "npm run clean-public && build-storybook",
+    "deploy-storybook": "npm run build-storybook &&gh-pages -d storybook-static",
+    "storybook": "start-storybook -p 6006"
   },
   "repository": {
     "type": "git",
