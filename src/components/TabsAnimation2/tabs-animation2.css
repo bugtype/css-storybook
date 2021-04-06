@@ -1,0 +1,73 @@
+/* Style the tab */
+.tab2 {
+  overflow: hidden;
+}
+
+/* Style the buttons inside the tab */
+.tab2 button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab2 button:hover {
+  border-bottom: 2px #eee solid;
+}
+
+/* Create an active/current tablink class */
+.tab2 button.active {
+  border-bottom: 2px #abf solid;
+}
+
+/* Style the tab content */
+.tab2content {
+  position: absolute;
+  opacity: 0;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+
+}
+
+.tab2content-active {
+  position: relative;
+  display: block;
+  opacity: 1;
+
+  /* left: -100px; */ 
+  animation: slide 0.5s forwards;
+  animation-delay: 0s;
+}
+
+
+
+/* Style the close button */
+.topright {
+  float: right;
+  cursor: pointer;
+  font-size: 28px;
+}
+
+.topright:hover {
+  color: red;
+}
+
+.tab2-contnent-container {
+ position: relative;
+}
+
+@keyframes slide {
+  100% { left: 0px; }
+  0% { left: 1000px; }
+}
+
+@keyframes hide-slide {
+  0% { left: 0px; opacity: 1; }
+  100% { left: -100px; opacity: 0; }
+}
