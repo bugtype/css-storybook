@@ -3,7 +3,7 @@ import React from 'react';
 import { HoverAnimation } from '../components/HoverAnimation';
 
 export default {
-  title: 'Example/HoverAnimation',
+  title: 'React/HoverAnimation',
   component: HoverAnimation,
 };
 
