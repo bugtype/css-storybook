@@ -3,7 +3,7 @@ import React from 'react';
 import { WavyTextAnimation } from '../components/WavyTextAnimation';
 
 export default {
-  title: 'Example/WavyTextAnimation',
+  title: 'React/Text/WavyTextAnimation',
   component: WavyTextAnimation,
 };
 

@@ -3,7 +3,7 @@ import React from 'react';
 import { NumberCountingAnimation } from '../components/NumberCountingAnimation';
 
 export default {
-  title: 'React/CountingAnimation',
+  title: 'React/Text/CountingAnimation',
   component: NumberCountingAnimation,
 };
 
