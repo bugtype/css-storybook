@@ -1,13 +1,14 @@
 import React from 'react';
 
-import { Image } from './Image';
+import { Story} from '@storybook/react'
+import {   Image    } from './Image';
 
 export default {
   title: 'Templates/React/ButtonAnimation',
   component: Image,
 };
 
-const Template = (args: any) => <Image {...args} />;
+const Template : Story = (args: any) => <Image {...args} />;
 
 export const ReactImage = Template.bind({});
 ReactImage.args = {

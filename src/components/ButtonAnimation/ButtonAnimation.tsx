@@ -10,8 +10,8 @@ export const ButtonAnimation = () => {
         const y = e.clientY - e.target?.offsetTop;
 
         const ripples = document.createElement('span');
-        ripples.style.left = x + 'px';
-        ripples.style.top = y + 'px';
+        ripples.style.left = `${x  }px`;
+        ripples.style.top = `${y  }px`;
         btn.appendChild(ripples);
 
         setTimeout(() => {

@@ -14,7 +14,7 @@ export const Image = memo(({alt,...others} : Props) =>{
   return <img 
     alt={alt}
     {...others} 
-    // loading=""
-    // data-src=""
-  />;
-})
+      // loading=""
+      // data-src=""
+    />;
+  })
